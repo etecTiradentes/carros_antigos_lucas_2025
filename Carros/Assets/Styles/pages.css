@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-family: Poppins, sans-serif;
+}
+/* Inicio do CSS */
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+#main-header {
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+#main-header.shrink {
+    padding: 10px 20px;
+}
+
+.header-subtitle {
+    transition: opacity 0.3s ease;
+}
+
+.header-content {
+    position: sticky;
+    top: 0;
+    background-color: #003dc0;
+    padding: 1.5rem 1.5rem;
+    color: white;
+}
+
+.header-content p {
+    font-weight: 550;
+}
+
+.nav-content {
+    position: relative;
+    background-color: #002470;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nav-content a {
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.nav-content a:hover {
+    color: rgb(158, 158, 158);
+}
+
+.ferrari-section {
+    display: flex;
+}
+
+.overlay-text {
+    flex: 1;                       
+    background-color: #0f0f0f;    
+    color: white;                 
+    padding: 60px;                
+    display: flex;               
+    flex-direction: column;       
+    justify-content: center;     
+    align-items: center; 
+    text-align: center;
+    font-size: 17px;
+    width: 500px;
+    height: 500px;
+}
+
+.overlay-text h2 {
+    transition: 1s;
+}
+
+.overlay-text h2:hover {
+    transform: translateY(-5px);
+}
+
+.overlay-text span {
+    font-weight: 250;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    transition: 1s;
+}
+
+
+.overlay-text span:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+  flex: 1;                       
+  overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.ferrari-story {
+    background-color: linear-gradient(to bottom, white, black);
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 800ms;
+}
+
+.content p {
+    padding: 3.5rem;
+    font-size: 25px;
+    text-align: start;
+    transition: 800ms;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.ferrari-details {
+    margin: 10px;
+}
+
+.ferrari-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.ferrari-info {
+    border-bottom: #0f0f0f 1px solid;
+}
+
+.ferrari-info:first-child {
+   border-top: #0f0f0f 1px solid;
+}
+
+.footer-content {
+    background-color: #0036ac;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    padding: 1rem 1.5rem;
+    height: 200px;
+    width: 100%;
+    gap: 1.75rem;
+}
+
+.list-content {
+    list-style: none;
+}
+
+.list-content a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding-left: 4rem;
+    margin: 15px;
+}
+
+.list-content a:hover {
+    text-decoration: line-through;
+}
+
+.footer-contacts {
+    padding: 1rem;
+    margin: 15px;
+    font-size: 17px;
+}
+
+.footer-img img:hover {
+    color: #002470;
+}
+
+#footer-copyright {
+    width: 100%;
+    height: 100px;
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 500;
+}
